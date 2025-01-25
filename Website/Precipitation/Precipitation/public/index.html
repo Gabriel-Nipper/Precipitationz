@@ -102,17 +102,18 @@
     <script>
       function initMap() {
           // Default location (YCIS Pudong)
-          var location = { lat: 31.202029, lng: 121.532313 };
+          var location1 = { lat: 31.202029, lng: 121.532313 };
+          var location2 = { lat: 31.201827, lng: 121.530956 };
 
           // Create the map
           var map = new google.maps.Map(document.getElementById("map"), {
               zoom: 18,  // Adjust zoom level
-              center: location,  // Center the map at the specified location
+              center: location1,  // Center the map at the specified location
               disableDefaultUI: false,  // Enable pan and zoom controls
           });
 
           var marker = new google.maps.Marker({
-              position: location,
+              position: location2,
               map: map,
               title: "YCIS Pudong"
           });
