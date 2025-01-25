@@ -110,6 +110,12 @@
               center: location,  // Center the map at the specified location
               disableDefaultUI: false,  // Enable pan and zoom controls
           });
+
+          var marker = new google.maps.Marker({
+              position: location,
+              map: map,
+              title: "YCIS Pudong"
+          });
       }
     </script>
   </body>
