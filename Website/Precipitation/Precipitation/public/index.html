@@ -114,8 +114,7 @@
       function initMap() {
           // Default location (YCIS Pudong)
           var location1 = { lat: 31.202029, lng: 121.532313 };
-          var location2 = { lat: 31.201827, lng: 121.530956 };
-          const zoomThreshold = 10; // Adjust the zoom level for invisible markers
+          var YCIS = { lat: 31.201827, lng: 121.530956 };
 
           // Create the map
           var map = new google.maps.Map(document.getElementById("map"), {
@@ -132,22 +131,10 @@
         };
 
           var marker = new google.maps.Marker({
-              position: location2,
+              position: YCIS,
               map: map,
               icon:YCISMarker,
               title: "YCIS Pudong"
-          });
-
-        map.addListener("zoom_changed", () => {
-            const currentZoom = map.getZoom();
-            toggleMarkers(currentZoom <= zoomThreshold);
-        });
-      }
-          
-        // Function to toggle marker visibility
-        function toggleMarkers(visible) {
-          markers.forEach(marker => {
-              marker.setVisible(invisible);
           });
       }
     </script>
