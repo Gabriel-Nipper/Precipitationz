@@ -123,6 +123,13 @@
               disableDefaultUI: true,  // Enable pan and zoom controls
           });
 
+          const customIcon1 = {
+              url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-2AVaZf_CDwgEkflNsPqGRTNpCzF8-7svtw&s",
+              scaledSize: new google.maps.Size(40, 40),
+              origin: new google.maps.Point(0, 0),
+              anchor: new google.maps.Point(20, 40),
+          };
+
           var marker = new google.maps.Marker({
               position: location2,
               map: map,
