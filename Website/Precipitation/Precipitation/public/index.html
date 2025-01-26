@@ -60,6 +60,31 @@
         height: fit-content; /* Ensure the height matches the content */
     }
 
+    /* Styling for the banner */
+    .banner {
+      background-color: #777777; /* Green banner */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      margin-top: 10px; /* Adds a space between the header and the banner */
+  }
+
+  /* Styling for the buttons in the banner */
+  .banner button {
+      background-color: #f1f1f1;
+      color: rgb(125, 47, 47);
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .banner button:hover {
+      background-color: #ddd;
+  }
+
     #map {
       width: 1000px;
       height: 500px;
@@ -110,6 +135,12 @@
     </script>
 
     <div class="headline">🌎YCIS Pudong Restaurants🌎</div>
+
+    <!-- Banner Section with buttons -->
+    <div class="banner">
+      <button id="loginButton">Login</button>
+      <button id="notificationsButton">Notifications</button>
+  </div>
 
     <div id="map"></div>
     
