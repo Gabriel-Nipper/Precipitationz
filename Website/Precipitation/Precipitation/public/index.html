@@ -58,16 +58,20 @@
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7); /* Subtle shadow for a popping effect */
         width: fit-content; /* Ensure the width matches the content */
         height: fit-content; /* Ensure the height matches the content */
+        z-index: 2; /* Ensure the message is on top of the map */
     }
 
     /* Styling for the banner */
     .banner {
+      display: flex;
       background-color: #777777; /* Green banner */
       color: white;
       padding: 20px;
       text-align: center;
       font-size: 18px;
       margin-top: 10px; /* Adds a space between the header and the banner */
+      justify-content: space-between; /* Space buttons to the left and right */
+      align-items: center;
   }
 
   /* Styling for the buttons in the banner */
@@ -134,13 +138,13 @@
       });
     </script>
 
-    <div class="headline">🌎YCIS Pudong Restaurants🌎</div>
-
     <!-- Banner Section with buttons -->
     <div class="banner">
       <button id="loginButton">Login</button>
       <button id="notificationsButton">Notifications</button>
-  </div>
+    </div>
+
+    <div class="headline">🌎YCIS Pudong Restaurants🌎</div>
 
     <div id="map"></div>
     
