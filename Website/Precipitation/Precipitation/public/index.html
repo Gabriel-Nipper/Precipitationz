@@ -60,10 +60,10 @@
         z-index: 2; /* Ensure the message is on top of the map */
         position: absolute; /* Position the message absolutely */
         top: 12px;
-        left: 679.8px;
+        left: calc(50% - 280.2px); /* Center the message horizontally */
     }
 
-    .top-left-notification-button {
+    .top-right-login-button {
         position: absolute;
         top: 10px;  /* Distance from the top of the page */
         left: 10px; /* Distance from the left of the page */
@@ -83,7 +83,7 @@
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7); /* Subtle shadow for a popping effect */
       margin-top: 20px; /* Add space above the map */
       top: 120px;
-      left: 460px;
+      left: calc(50% - 500px); /* Center the message horizontally */
     }
     </style>
   </head>
@@ -128,7 +128,7 @@
     </script>
 
     <!-- Button aligned to the top left -->
-    <button class="top-left-button">Top Left Button</button>
+    <button class="top-right-login-button">Login</button>
 
 
     <div class="headline">🌎YCIS Pudong Restaurants🌎</div>
