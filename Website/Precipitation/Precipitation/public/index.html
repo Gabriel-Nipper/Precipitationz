@@ -37,7 +37,6 @@
     <style media="screen">
       body {
         position: relative;
-        margin: 0; /* Remove default margins */
         background-color: #eee; /* Optional background color */
         font-family: Arial, sans-serif;
         flex-direction: column;
@@ -59,6 +58,9 @@
         width: fit-content; /* Ensure the width matches the content */
         height: fit-content; /* Ensure the height matches the content */
         z-index: 2; /* Ensure the message is on top of the map */
+        position: absolute; /* Position the message absolutely */
+        top: 12px;
+        left: 679.8px;
     }
 
     .top-left-notification-button {
@@ -80,6 +82,8 @@
       border-radius: 8px;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7); /* Subtle shadow for a popping effect */
       margin-top: 20px; /* Add space above the map */
+      top: 120px;
+      left: 460px;
     }
     </style>
   </head>
