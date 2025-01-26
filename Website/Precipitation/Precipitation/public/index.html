@@ -77,13 +77,13 @@
     }
 
     #map {
+      top: 120px;
+      left: calc(50% - 500px); /* Center the message horizontally */
       width: 1000px;
       height: 500px;
       border-radius: 8px;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7); /* Subtle shadow for a popping effect */
       margin-top: 20px; /* Add space above the map */
-      top: 120px;
-      left: calc(50% - 500px); /* Center the message horizontally */
     }
     </style>
   </head>
@@ -136,7 +136,7 @@
     <div id="map"></div>
     
     <script>
-      window.onload = function initMap() {
+      function initMap() {
           // Default location (YCIS Pudong)
           var location1 = { lat: 31.202029, lng: 121.532313 };
           var YCIS = { lat: 31.201827, lng: 121.530956 };
