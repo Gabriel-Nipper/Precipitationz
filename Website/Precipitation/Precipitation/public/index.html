@@ -140,7 +140,7 @@
 
         map.addListener("zoom_changed", () => {
             const currentZoom = map.getZoom();
-            toggleMarkers(currentZoom >= zoomThreshold);
+            toggleMarkers(currentZoom <= zoomThreshold);
         });
       }
           
