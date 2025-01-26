@@ -77,18 +77,13 @@
     }
 
     #map {
-      visibility: hidden; /* Hide the map initially */
       top: 120px;
       left: calc(50% - 500px); /* Center the message horizontally */
-      width: 1000px;
+      width: 100%;
       height: 500px;
       border-radius: 8px;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7); /* Subtle shadow for a popping effect */
       margin-top: 20px; /* Add space above the map */
-    }
-
-    #map.loaded {
-      visibility: visible; /* Show the map once it's loaded */
     }
     </style>
   </head>
@@ -166,8 +161,6 @@
               icon:YCISMarker,
               title: "YCIS Pudong"
           });
-
-          document.getElementById('map').classList.add('loaded');  // Add 'loaded' class to make the map visible
       }
     </script>
   </body>
